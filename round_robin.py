@@ -7,7 +7,7 @@ Written by akakou at 2017 08/10.
 This module makes round-robin strings.
 '''
 
-import character_list
+from etc import character_list
 import itertools
 
 CharacterList = character_list.CharacterList
@@ -25,6 +25,7 @@ class RoundRobin(CharacterList):
         '''Set next string and return it.'''
         self.setup()
 
+        # start iterater
         while True:
             self.count += 1
             for self.string in itertools.product(

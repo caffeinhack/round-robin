@@ -10,7 +10,7 @@ This module is stationery for list of characters.
 import string
 
 
-class CharacterList:
+class CharacterList(object):
     '''This class is stationery for list of characters.'''
 
     def __init__(
